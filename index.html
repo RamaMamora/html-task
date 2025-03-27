@@ -12,10 +12,83 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script src="assets/js/apps.js" defer></script>
   </head>
   <body>
+    <details open>
+      <summary>The form</summary>
+      <p><b>You need to fill this form in order to work</b></p>
+      <hr />
+    </details>
+
+    <i> <a href="#">visit this page to know how to fill forms</a></i>
+    <form>
+      <label>Choose a flavor:</label>
+      <input type="text" list="flavors" id="flavorInput" required />
+      <datalist id="flavors">
+        <option value="Chocolate"></option>
+        <option value="Coconut"></option>
+        <option value="Mint"></option>
+        <option value="Strawberry"></option>
+        <option value="Vanilla"></option>
+      </datalist>
+
+      <br />
+      <label>Choose dressing:</label>
+      <input type="text" placeholder="marshmallow" />
+      <br />
+      <label>Your telephone number:</label>
+      <input type="tel" pattern="(\+45\s?)?[0-9]{8}" required />
+      <br />
+      <label>Your age:</label>
+      <input type="number" min="0" max="100" required />
+      <br />
+      <label>
+        <input type="checkbox" />
+        Would you like a sauce?</label
+      >
+      <br />
+      <label
+        >Select the sause you want:
+        <select>
+          <option value="sauce">Sauce</option>
+          <option value="chocolate">Chocolate</option>
+        </select>
+      </label>
+      <br />
+      <p>Do you like our service?</p>
+      <label>Yes</label>
+      <input type="radio" name="service" value="yes" />
+
+      <label>No</label>
+      <input type="radio" name="service" value="no" />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+    <br />
     <h1>Salamander</h1>
-    <p>The reptile creature</p>
-    <a href="">Visit this page to know how to fil forms</a>
+    <br />
+    <h5>The reptile creature</h5>
+    <br />
+    <p>
+      Several species of
+      <span style="background-color: yellow">salamander</span> inhabit the
+      temperate rainforest of the Pacific Northwest.
+    </p>
+    <br />
+    <p>
+      Most <span style="background-color: yellow">salamanders</span> are
+      nocturnal, and hunt for insects, worms, and other small creatures.
+    </p>
+    <br />
+    <video controls width="400">
+      <source
+        src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <br />
+    <img src="/assets/img/hello-kitty.webp" alt="hello kitty" />
   </body>
 </html>
